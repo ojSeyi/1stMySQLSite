@@ -10,7 +10,11 @@
     <br><br>
     <div method="post" action="login.php">
 
-        <h3>Current user: </h3> <?php echo $username ?>
+        <h3>Current user: </h3>
+        <?php
+            $username = mysql_fetch_field($result, 1);
+            echo $username;
+        ?>
     </div>
 </body>
 </html>
