@@ -8,15 +8,8 @@
 <body>
     <h1>Hello</h1>
     <br><br>
-
-        <h3>Current user: </h3>
-        <?php
-            include ("DB_CONNECTION.php");
-            $usersSQL = "SELECT username FROM users";
-            $rs = mysqli_query($usersSQL);
-            echo $rs;
-
-        ?>
+    <?php include ("login.php") ?>
+        <h3>Current user: </h3> <?php echo $password ?>
 
 </body>
 </html>
