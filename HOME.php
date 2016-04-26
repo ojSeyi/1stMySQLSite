@@ -8,13 +8,12 @@
 <body>
     <h1>Hello</h1>
     <br><br>
-    <div method="post" action="login.php">
 
         <h3>Current user: </h3>
         <?php
             $username = mysql_fetch_field($result, 1);
             echo $username;
         ?>
-    </div>
+
 </body>
 </html>
