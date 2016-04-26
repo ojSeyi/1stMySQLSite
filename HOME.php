@@ -11,9 +11,11 @@
 
         <h3>Current user: </h3>
         <?php
-            include ("login.php");
-            
-            echo $username;
+            include ("DB_CONNECTION.php");
+            $usersSQL = "SELECT username FROM users";
+            $rs = mysqli_query($usersSQL);
+            echo $rs;
+
         ?>
 
 </body>
