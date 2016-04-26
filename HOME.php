@@ -8,8 +8,12 @@
 <body>
     <h1>Hello</h1>
     <br><br>
-    <?php include ("login.php") ?>
-        <h3>Current user: </h3> <?php echo $password ?>
+    <?php include ("login.php"); ?>
+        <h3>Current user: </h3>
+        <?php
+            $username =  $_GET["username"];
+            echo $username;
+        ?>
 
 </body>
 </html>
