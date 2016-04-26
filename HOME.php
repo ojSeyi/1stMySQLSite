@@ -12,7 +12,7 @@
         <h3>Current user: </h3>
         <?php
             include ("login.php");
-            $username = mysql_fetch_field($result, 1);
+            
             echo $username;
         ?>
 
