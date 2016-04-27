@@ -4,9 +4,6 @@
         echo "Both fields are required.";
     }
     else{
-        session_start();
-        $user = $_SESSION[$_POST["username"]];
-
         $username=$_POST["username"];
         $password=$_POST["password"];
 
@@ -14,7 +11,8 @@
         $result = mysqli_query($db,$sql);
 
         if(mysqli_num_rows($result) == 1){
-            header("location: home.php"); //redirecting to another page
+            $location = "home.php?username=$username";
+            header("location: $location"); //redirecting to another page
         }
         else{
             echo "Incorrect Username and password.";
