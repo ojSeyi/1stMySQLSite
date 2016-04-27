@@ -14,6 +14,8 @@
 
         if(mysqli_num_rows($result) == 1){
             header("location: home.php"); //redirecting to another page
+            $user = mysqli_field_count($result);
+            echo $user;
         }
         else{
             echo "Incorrect Username and password.";
