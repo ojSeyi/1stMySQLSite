@@ -19,7 +19,7 @@
         </form>
         <div class="error">
             <?php
-                //echo $error
+                //echo $error 
             ?>
             <?php
                 //echo $username; echo $password
