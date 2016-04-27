@@ -10,11 +10,13 @@
     <h1>Hello</h1>
     <br><br>
     <div id="logged in user">
-        <h3>Current user: </h3>
-        <?php
+        <h3>Current user:
+            <?php
             $username = $_GET["username"];
             echo $username;
-        ?>
+            ?>
+        </h3>
+
     </div>
 </body>
 </html>
