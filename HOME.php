@@ -12,7 +12,8 @@
     <div id="logged in user">
         <h3>Current user: </h3>
         <?php
-
+            $username = $_GET["username"];
+            echo $username;
         ?>
     </div>
 </body>
