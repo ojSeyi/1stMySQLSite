@@ -13,7 +13,7 @@
         <h3>Current user: </h3>
         <?php
             session_start();
-            $user = $_GET["username"];
+            $user = $_SESSION["username"];
             echo "Current logged in user is: ".$user.".";
         ?>
     </div>

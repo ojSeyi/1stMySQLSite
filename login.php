@@ -5,7 +5,8 @@
     }
     else{
         session_start();
-        $user = $_SESSION["username"];
+        $user = $_SESSION[$_POST["username"]];
+
         $username=$_POST["username"];
         $password=$_POST["password"];
 
