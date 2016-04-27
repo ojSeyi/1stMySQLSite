@@ -6,6 +6,7 @@
     else{
         $username=$_POST["username"];
         $password=$_POST["password"];
+        echo $username;
 
         $sql="SELECT uid FROM users WHERE username='$username' AND password = '$password'";
 
@@ -18,4 +19,8 @@
             echo "Incorrect Username and password.";
         }
     }
+
+
+
+
 ?>

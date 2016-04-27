@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
+
     <h1>Hello</h1>
     <br><br>
-    <?php include ("login.php"); ?>
+    <div id="logged in user">
         <h3>Current user: </h3>
         <?php
             $username =  $_GET["username"];
             echo $username;
         ?>
-
+    </div>
 </body>
 </html>
